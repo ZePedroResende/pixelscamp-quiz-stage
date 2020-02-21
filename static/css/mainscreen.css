@@ -1,9 +1,9 @@
 body {
-    color: #b0b0b0;
+    color: #437c90;
     padding: 0;
     font-size: 18px;
     font-family: 'Lato', sans-serif;
-    background: #1c1c1c;
+    background: #052C49;
     margin: 0;
     overflow: hidden;
 }
@@ -121,7 +121,7 @@ div {
 
 #main_title {
     display: block;
-    font-family: 'Avant Pixel';
+    font-family: 'Library 3 am soft';
     font-size: 4.2vh;
     font-weight: normal;
     color: #01a7ee;
@@ -184,7 +184,7 @@ div {
 }
 
 #options .answer.blank {
-    background: #333;
+    background: #437c90;
 }
 
 #timer {
@@ -196,7 +196,7 @@ div {
 }
 
 #timer-number {
-    font-family: 'Press Start 2P';
+    font-family: 'Overpass Mono';
     font-size: 18vh;
     font-weight: bold;
     letter-spacing: 0.6vh;
@@ -216,29 +216,29 @@ div {
 }
 
 #timer-number.inactive {
-    color: #444;
+    color: #888;
 }
 
 #scoreboard {
     position: absolute;
-    right: 0.5vw; bottom: 9.5vh;
+    right: 0.5vw; bottom: 24vh;
     text-align: center;
 }
 
 #scoreboard p {
     margin: 3.5vh 0 6.5vh 0;
-    font-family: 'Avant Pixel';
+    font-family: 'Lato', sans-serif;
     font-size: 4.5vh;
     color: ivory;
     text-align: center;
-    opacity: 0.85;
+    opacity: 0.9;
 }
 
 #scoreboard table {
     background: none;
     box-shadow: none;
     border-spacing: 0;
-    color: #777;
+    color: #437C90;
     background: linear-gradient(to right, rgba(0,0,0,0) 40%, rgba(255,255,255,0.04) 80%, rgba(255,255,255,0.06) 100%);
     padding: 0.2vh 0.3vw;
 }
@@ -283,12 +283,12 @@ div {
 }
 
 #scoreboard .score-0 {
-    color: #777;
+    color: #888;
 }
 
 #scoreboard .name .hash {
     font-size: 90%;
-    opacity: 0.90;
+    opacity: 0.80;
 }
 
 #scoreboard td:nth-child(1):before {
@@ -387,11 +387,38 @@ div {
     margin: 0; padding: 0;
 }
 
-#sponsor.overlay {
+.cenas {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 102%; height: 101%;
+    top: -1%; left: -1%;
+    background: #1c1c1c80;
+    margin: 0; padding: 0;
+}
+
+.enei {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 102%; height: 101%;
+    top: -1%; left: -1%;
+    margin: 0; padding: 0;
+    transform: translateY(95%)
+}
+
+.enei img {
+  height: 22%;
+  opacity: 0.6;
+}
+
+#sponsor.cenas {
     visibility: visible;
 }
 
-#sponsor.overlay p {
+#sponsor.cenas p {
     position: absolute;
     font-size: 3.5vh;
     font-family: 'Telex';
@@ -400,12 +427,11 @@ div {
     left: 11%; top: 10%;
 }
 
-#sponsor.overlay img {
-    height: 30%;
-    margin: 5% 0 0 0;
+#sponsor.cenas img {
+    height: 60%;
     padding: 0;
-    filter: drop-shadow(0 0 0.6vh ivory);
-    opacity: 0.5;
+    color: #fcfcfc;
+    opacity: 0.6;
 }
 
 #buzzed.overlay {

@@ -313,7 +313,7 @@ function start() {
          *       Therefore, they need to always match the *replaced* text...
          */
 
-        if ((/\bstarting.*?\b(?:round\s+[0-9]+|final\s+round)/i).test(curr_question_html)) {
+        if ((/\bstarting.*?\b(?:round\s+[0-9]+|final\s+round)|Adding the/i).test(curr_question_html)) {
             console.log("Showing sponsor logo...");
             $('#sponsor').css("visibility", "visible");
         } else {
